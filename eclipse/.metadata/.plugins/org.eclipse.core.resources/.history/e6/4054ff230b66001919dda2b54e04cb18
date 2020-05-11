@@ -1,0 +1,72 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+			
+			int n100, n50, n20, n10, n5, n2, m1, m50c, m25c, m10c, m5c, m1c;
+			double resto, valor;
+			
+			valor = sc.nextDouble();
+			
+			//CALCULO DAS NOTAS
+			n100 = (int) valor / 100;
+			resto = valor % 100;
+			
+			n50 = (int) resto / 50;
+			resto = resto % 50;
+			
+			n20 = (int) resto / 20;
+			resto = resto % 20;
+			
+			n10 = (int) resto / 10;
+			resto = resto % 10;
+			
+			n5 = (int) resto / 5;
+			resto = resto % 5;
+			
+			n2 = (int) resto / 2;
+			resto = resto % 2;
+			
+			//CALCULO DAS MOEDAS
+			m1 = (int) resto / 1;
+			resto = resto % 1;
+			
+			m50c = (int) resto / 0.50;
+			resto = resto % 0.50;
+			
+			m25c = (int) resto / 0.25;
+			resto = resto % 0.25;
+			
+			m10c = (int) resto / 0.10;
+			resto = resto % 0.10;
+			
+			m5c = (int) resto / 0.05;
+			resto = resto % 0.05;
+			
+			m1c = (int) resto / 0.01;
+			
+			//IMPRESSAO DOS RESULTADOS
+			System.out.println("NOTAS:");
+			System.out.println(n100 + " nota(s) de R$ 100.00");
+			System.out.println(n50 + " nota(s) de R$ 50.00");
+			System.out.println(n20 + " nota(s) de R$ 20.00");
+			System.out.println(n10 + " nota(s) de R$ 10.00");
+			System.out.println(n5 + " nota(s) de R$ 5.00");
+			System.out.println(n2 + " nota(s) de R$ 2.00");
+			System.out.println("MOEDAS:");
+			System.out.printf("%.0f moeda(s) de R$ 1.00%n", m1);
+			System.out.printf("%.0f moeda(s) de R$ 0.50%n", m50c);
+			System.out.printf("%.0f moeda(s) de R$ 0.25%n", m25c);
+			System.out.printf("%.0f moeda(s) de R$ 0.10%n", m10c);
+			System.out.printf("%.0f moeda(s) de R$ 0.05%n", m5c);
+			System.out.printf("%.0f moeda(s) de R$ 0.01%n", m1c);
+			
+		sc.close();
+
+	}
+
+}

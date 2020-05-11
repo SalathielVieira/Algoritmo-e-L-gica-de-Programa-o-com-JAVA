@@ -1,0 +1,95 @@
+S1 - INTRODUÇÃO
+- Apresentação
+
+S2 - INTRODUÇÃO SOBRE PROGRAMAÇÃO
+{
+	- Algoritmo, automação e programa de computador
+	{
+
+		- Algoritmo: sequência finita de instruções para se desenvolver um problema.
+			     aplica-se a diveras áreas do conhecimento.
+			     exemplo: lavar roupa suja. Uma sequência de passos.
+		- Automação: consiste em utilizar máquina(s) para executar o procedimento desejado de forma automática ou semiautomática.
+		- Programas de computador: são algoritmos executados pelo computador (em linhas gerais).
+					   o computador é uma máquina que automatiza a execução de algoritmos.
+					   algoritmos computacionais: processamento de dados - cálculos.
+	}
+
+
+	- O que é preciso para se fazer um programa de computador
+	{
+		- Uma LINGUAGEM DE PROGRAMAÇÃO: regras léxicas e sintáticas para se escrever o programa.
+		- Uma IDE: software para editar e testar o programa.
+		- Um COMPILADOR: software para transformar o código fonte em código objeto.
+		- Um GERADOR DE CÓDIGO ou MÁQUINA VIRTUAL: software que permite que o programa seja executado.
+	}
+
+
+	- Linguagem de programação, léxica, sintática
+	{
+		- LINGUAGEM DE PROGRAMAÇÃO: é um conjunto de regras léxicas (ortografia) e sintáticas (gramática) para se escrever programas.
+					    exemplos de linguagens de programação: C, Pascal, C++, Java, C#, Python, Ruby, PHP, JavaScript etc...
+	}
+
+
+	- IDE - Ambiente Integrado de Desenvolvimento 
+	{
+		- IDE: é um conjunto de softwares utilizado para a construção de programas.
+		       exemplos: C/C++: Code Blocks; Java: Eclipse, NetBeans; C#: Microsoft Visual Studio
+		
+		- Funcionalidades de uma IDE
+			. Edição de código fonte (endentação, autocompletar, destaque de palavras etc)
+			. Depuração e testes
+			. Construção do produto final (build)
+			. Sugestão de modelos (templates)
+			. Auxiliar em várias tarefas do seu projeto
+	}
+
+
+	- Compilação e interpretação, código fonte e objeto, máquina virtual
+	{
+		- Código fonte: é aquele escrito pelo programador em linguagem de programação.
+		- Compilação: é um processo de transformação do código fonte em código objeto.
+
+			|--------------|     Compilador:	|---------------|     Gerador de código:       |-------------------|
+			|	       |     Compilação         |               |     construção (build)       |		   |
+ 			| Código fonte | ---------------------> | Código objeto | ---------------------------> | Código executável |
+			|              |   análise léxica       |               |          geração             |		   |
+			|--------------|         e              |---------------|            de		       |-------------------|
+				      	  análise sintárica                                código	       
+		
+		- Interpretação:
+			|--------------|         Interpretador:       |---------------|
+			|	       |         Interpretação        |               |
+ 			| Código fonte | ---------------------------> |   EXECUÇÃO    |
+			|              |         análise léxica       |               |
+			|--------------|               +              |---------------|
+				      	        análise sintárica
+						       +
+						geração de código
+						       +
+						   SOB DEMANDA
+		- Abordagem híbrida:
+			|--------------|     Compilador:	|---------------|     Máquina virtual:     |----------|
+			|	       |     Compilação         |               |      interpretação       |	      |
+ 			| Código fonte | ---------------------> |    Bytecode   | -----------------------> | EXECUÇÃO |
+			|              |   análise léxica       |               |     geração de código    |	      |
+			|--------------|         e              |---------------|                          |----------|
+				      	  análise sintárica                                SOB DEMANDA
+		- Vantagens:
+			Compilação:
+				. velocidade do programa
+				. auxílio do compilador antes da execução
+			Interpretação:
+				. flexibilidade de manutenção do aplicativo em produção.
+				. expressividade da linguagem (poucas expressões para se redigir um código).
+				. código fonte não precisa ser recompilado para rodar em plataformas diferentes.
+			Abordagem híbrida (aproveita as vantagens das abordagens compilação e interpretação)
+				. Aproveita de uma forma melhor: auxílio do compilador antes da execução e código fonte não precisa ser recompilado para rodar em plataformas diferentes.
+				. Aproveita parcialmente: velocidade do programa e flexibilidade de manutenção do aplicativo em produção.
+		- Esboço:
+			. Compilação    ---> Código fonte ---> -------- ---> Código executável ---> Sistema Operacional ---> Hardware (C/C++)
+			. Interpretação ---> Código fonte ---> -------- ---> Interpretador     ---> Sistema Operacional ---> Hardware (PHP, Python, JavaScript)
+			. Híbrida       ---> Código fonte ---> Bytecode ---> Máquina virtual   ---> Sistema Operacional ---> Hardware (Java, C#)
+	}
+}
