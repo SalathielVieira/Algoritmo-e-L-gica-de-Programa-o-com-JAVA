@@ -1,2 +1,2 @@
 # Definir a linguagem Java
-*.js linguist-vendored=false
+.metadata/* linguist-vendored
