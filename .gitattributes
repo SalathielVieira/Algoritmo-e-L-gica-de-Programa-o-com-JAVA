@@ -1,2 +1,3 @@
 # Definir a linguagem Java
+*.js linguist-vendored=false
 *.java linguist-detectable=true
